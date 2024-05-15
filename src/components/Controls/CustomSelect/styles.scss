@@ -1,0 +1,51 @@
+.custom-select {
+  position: relative;
+  display: inline-block;
+
+  &__box {
+    padding: 10px;
+    border: 1px solid #C3C6CC;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    overflow: hidden;
+    height: 40px;
+    border-radius: 4px;
+
+    input {
+      flex: 1;
+      border: none;
+      outline: none;
+      text-overflow: ellipsis;
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      font-size: 16px;
+      display: block;
+    }
+  }
+
+  &__list {
+    position: fixed;
+    min-height: 100px;
+    max-height: 300px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    overflow: hidden auto;
+
+    &__item {
+      padding: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #f0f0f0;
+      }
+    }
+  }
+}
